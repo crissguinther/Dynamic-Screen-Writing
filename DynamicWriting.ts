@@ -31,9 +31,6 @@ export class DynamicWriting {
       animationSpeed: 1,
       delay: 1,
     };
-    // (this.wordsArray = wordsArray),
-    //   (this.options.animationSpeed = options?.animationSpeed),
-    //   (this.options.delay = options?.delay),
     this.isReverse = wordsArray.length > 1 ? true : false;
     Object.assign(this.options, options);
   }
@@ -133,7 +130,6 @@ export class DynamicWriting {
   public init() {
     if (this.isRunning != false) return;
     this.isRunning = true;
-    // this.targetElement?.classList.add("cursor");
     this.setCurrentWord();
     this.initializeWordWriting();
   }
